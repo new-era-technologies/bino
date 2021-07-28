@@ -129,7 +129,8 @@
     &__lines>hr {
         width: 80px;
         height: 1px;
-        color: #f1ebe7;
+        background-color: #f1ebe7;
+        border: none;
         display: inline-block;
         box-sizing: border-box;
     }
