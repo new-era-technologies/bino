@@ -1,0 +1,25 @@
+@import "base/reset";
+@import "base/fonts";
+@import "utils/mixins";
+@import "layout/header";
+@import "layout/blog";
+@import "layout/pricing";
+@import "layout/team";
+@import "layout/touch";
+@import "layout/footer";
+.main-wrapper {
+    background: #ffffff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media all and (min-width: 1920px) {
+    .container {
+        padding: 0 375px;
+    }
+}
