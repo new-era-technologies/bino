@@ -1,0 +1,102 @@
+.pricing {
+    &__wrapper {
+        width: 100%;
+        height: 935px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    &__title {
+        padding-top: 156px;
+        @include font(Source Sans Pro, normal, 700, 36px, 1.2, #6a6a6a);
+        letter-spacing: 0.1em;
+    }
+    &__description {
+        margin-top: 29px;
+        @include font(Open Sans, normal, 400, 14px, 29px, #999999);
+    }
+    &__lines {
+        width: 197px;
+        margin: 28px auto 0;
+        display: flex;
+        align-items: center;
+    }
+    &__lines>hr {
+        width: 80px;
+        height: 1px;
+        background-color: #999999;
+        border: none;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    &__lines>span {
+        margin: 0 15px;
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #e74c3c;
+    }
+    &__inner {
+        margin-top: 67px;
+    }
+}
+
+.plans {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 380px;
+        height: 610px;
+    }
+}
+
+.plan {
+    position: relative;
+    text-align: center;
+    transition: .2s all;
+    &__title-box {
+        width: 100%;
+        height: 205px;
+        padding-top: 50px;
+        background-color: #999999;
+        box-sizing: border-box;
+    }
+    &__descr-box {
+        width: 100%;
+        height: 405px;
+        padding-top: 125px;
+        background-color: #f4f5f9;
+        box-sizing: border-box;
+    }
+    &__title {
+        @include font(Open Sans, normal, 700, 24px, 1.2, #ffffff);
+        letter-spacing: 0.075em;
+    }
+    &__img {
+        width: 174px;
+        height: 172px;
+        position: absolute;
+        top: 119px;
+        left: calc(50% - 87px);
+    }
+    &__descr {
+        @include font(Open Sans, normal, 600, 14px, 40px, #999999);
+    }
+    &__link {
+        margin: 48px auto 0;
+        width: 145px;
+        height: 46px;
+        background-color: #999999;
+        border-radius: 3px;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include font(Open Sans, normal, 600, 12px, 1.2, #ffffff);
+        letter-spacing: 0.01em;
+        text-decoration: none;
+    }
+}
