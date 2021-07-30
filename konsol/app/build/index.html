@@ -344,7 +344,7 @@
         <section class="touch">
             <div class="touch__wrapper">
                 <div class="container">
-                    <h2 class="touch__title">kEEP IN TOUCH</h2>
+                    <h2 class="touch__title">KEEP IN TOUCH</h2>
                     <p class="touch__description">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
                     <div class="touch__lines">
                         <hr>
@@ -363,12 +363,12 @@
                             <a href="mailto:contactus@email.com" class="touch-address__text">contactus@email.com</a>
                         </div>
                         <div class="touch__form touch-form">
-                            <form action="#" method="GET">
-                                <input type="text">
-                                <input type="email">
-                                <input type="text">
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                                <input type="submit" value="SEND MESSAGE">
+                            <form action="#" method="POST">
+                                <input class="touch-form__input touch-form__input--text" type="text" name="name" placeholder="Name" required>
+                                <input class="touch-form__input touch-form__input--text" type="email" name="email" placeholder="Email" required>
+                                <input class="touch-form__input touch-form__input--text" type="text" name="subject" placeholder="Subject" required>
+                                <textarea class="touch-form__input touch-form__input--textarea" name="message" rows="3" placeholder="Message" required></textarea>
+                                <input class="touch-form__input touch-form__input--submit" type="submit" value="SEND MESSAGE">
                             </form>
                         </div>
                     </div>
