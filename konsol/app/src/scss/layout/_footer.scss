@@ -1,0 +1,28 @@
+.footer {
+    &__wrapper {
+        width: 100%;
+        height: 90px;
+        background-color: #202020;
+        box-sizing: border-box;
+    }
+    &__inner {
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 20px;
+    }
+    &__link {
+        display: flex;
+    }
+    &__text {
+        @include font(Open Sans, normal, 600, 14px, 24px, #999999);
+        opacity: 0.74;
+    }
+}
