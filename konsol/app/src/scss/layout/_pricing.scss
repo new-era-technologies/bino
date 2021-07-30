@@ -63,6 +63,7 @@
         padding-top: 50px;
         background-color: #999999;
         box-sizing: border-box;
+        transition: .2s all;
     }
     &__descr-box {
         width: 100%;
@@ -98,5 +99,6 @@
         @include font(Open Sans, normal, 600, 12px, 1.2, #ffffff);
         letter-spacing: 0.01em;
         text-decoration: none;
+        transition: .2s all;
     }
 }

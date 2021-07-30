@@ -4,7 +4,8 @@
 
 const arrToTop = document.getElementById('top'),
     anchorDown = document.getElementById('anchor-down'),
-    linksToSection = document.querySelectorAll('.head-nav__link');
+    linksToSection = document.querySelectorAll('.head-nav__link'),
+    plan = document.querySelectorAll('.plan');
 
 
 //scroll down, show the button
@@ -45,3 +46,17 @@ linksToSection.forEach(anch => {
         });
     });
 });
+
+//change color plan on hover
+plan.forEach(
+    plan => {
+        plan.addEventListener('mouseenter', function() {
+            this.children[0].style.backgroundColor = '#e74c3c';
+            this.children[2].children[4].style.backgroundColor = '#e74c3c';
+        });
+        plan.addEventListener('mouseleave', function() {
+            this.children[0].style.backgroundColor = '#999999';
+            this.children[2].children[4].style.backgroundColor = '#999999';
+        })
+    }
+)
