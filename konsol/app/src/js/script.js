@@ -5,7 +5,8 @@
 const arrToTop = document.getElementById('top'),
     anchorDown = document.getElementById('anchor-down'),
     linksToSection = document.querySelectorAll('.head-nav__link'),
-    plan = document.querySelectorAll('.plan');
+    plans = document.querySelectorAll('.plan'),
+    teamMembers = document.querySelectorAll('.team__item');
 
 
 //scroll down, show the button
@@ -48,7 +49,7 @@ linksToSection.forEach(anch => {
 });
 
 //change color plan on hover
-plan.forEach(
+plans.forEach(
     plan => {
         plan.addEventListener('mouseenter', function() {
             this.children[0].style.backgroundColor = '#e74c3c';
@@ -57,6 +58,20 @@ plan.forEach(
         plan.addEventListener('mouseleave', function() {
             this.children[0].style.backgroundColor = '#999999';
             this.children[2].children[4].style.backgroundColor = '#999999';
+        })
+    }
+)
+
+//show member name on hover
+teamMembers.forEach(
+    member => {
+        member.addEventListener('mouseenter', function() {
+            this.children[0].children[0].style.transform = 'scale(1.5)';
+            this.children[0].children[1].style.opacity = 1;
+        });
+        member.addEventListener('mouseleave', function() {
+            this.children[0].children[0].style.transform = 'scale(1)';
+            this.children[0].children[1].style.opacity = 0;
         })
     }
 )
